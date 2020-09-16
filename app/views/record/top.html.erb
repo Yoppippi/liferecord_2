@@ -1,6 +1,11 @@
 <div class="jumbotron jumbotron-extend">
   <div class="container-fluid jumbotron-container">
     <h1 class="site-name" class="shadow-sm" ><span>生活</span>を<span>記録</span>しよう</h1>
-    <p><%= link_to 'Sign in', new_user_session_path, class: "btn btn-black"%></p>
+    <% if user_signed_in? %>
+      <p><%= link_to 'Go record', record_index_path, class: "btn btn-black"%></p>
+    <% else %>
+      <%= link_to 'Sign in', new_user_session_path, class: "btn btn-black"%>
+      <%= link_to 'Guest', record_guest_sign_in_path, method: :post, class: "btn btn-black guest-btn"%>
+    <% end %>
   </div>
 </div>
