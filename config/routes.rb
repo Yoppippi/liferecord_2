@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root to: "record#top"
   resources :users, only: [:edit, :update]
   resources :record
+  resources :meals
+  resources :sleeps
+  resources :motions
 
   post '/record/guest_sign_in', to: 'record#new_guest'
 end

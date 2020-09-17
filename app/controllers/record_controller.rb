@@ -1,5 +1,5 @@
 class RecordController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :top, :new_guest]
+  before_action :authenticate_user!, except: [:top, :new_guest]
   def top
   end
 
@@ -7,6 +7,10 @@ class RecordController < ApplicationController
   end
 
   def show
+  end
+
+  def new
+    
   end
 
   def new_guest

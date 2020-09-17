@@ -35,7 +35,7 @@
   color: white;
   text-shadow: 3px 6px 3px #808080; 
   background-color: rgba(225, 225, 225, 0.55);
-  width: 600px;
+  width: 770px;
 }
 .btn-black {
   border-radius: 0;
@@ -65,7 +65,7 @@
   color: #f8f9fa;
 }
 
-span {
+.top-html {
   color: #892f1b ;
   font-size: 80px;
 }
@@ -81,7 +81,7 @@ span {
 .btn-top {
   padding: 10px 20px;
 }
-// top-css ------------------------------------------
+// top-css ------------------------------------------//
 // user-css -----------------------------------------
 .account-page .account-page__inner {
   width: 980px;
@@ -197,17 +197,171 @@ span {
   padding: 0;
   font-size: 13px;
 }
-// user-css  ------------------------------------------
+// user-css  ------------------------------------------//
 // index-css ------------------------------------------
 
 .mizu {
   margin-left: 70px;
   width: 250px;
-  height:700px;
-  // background-image: url("/images/mizu.png");
+  height:750px;
+  // display: flex;
+  // align-items: center;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  zoom: 90%;
+  background-color: whitesmoke;
+  // margin-left: 100px;
 }
 
-.title.change {
-  background-image: url("/images/full.png");
+.chat-side {
+  width: 400px;
+  background-color: whitesmoke;
+  position:relative;
+  margin-left: 170px;
 }
-// index-css ------------------------------------------
+
+.chat-main {
+  width: calc(100% - 400px);
+  background-color: whitesmoke;
+}
+
+.main-one {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-two {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-three {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-box {
+  width: 340px;
+  background-color: #ffffff;
+  margin-left: 280px;
+  font-size: 40px;
+  padding: 13px 0px;
+}
+
+.side-box {
+  height: 40px;
+  width: 150px;
+  background-color: whitesmoke;
+  margin-top: 390px;
+  margin-left: 10px;
+}
+
+.rate {
+  font-size: 80px;
+  padding-top: 400px;
+  position: absolute;
+  top: -155px;
+  left: 125px
+}
+
+.side-btn {
+  padding: 5px 6px;
+  
+}
+
+.btn-shadow {
+  border: black 1px solid;
+  border-bottom: solid 4px #627295;
+  border-radius: 5px;
+}
+
+.btn-shadow:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+// 吹き出し
+.balloon1-top {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 15px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #cef5f5;
+  margin-left: 80px;
+  margin-bottom: 160px;
+}
+
+.balloon1-top:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #cef5f5;
+}
+
+.balloon1-top p {
+  margin: 0;
+  padding: 0;
+}
+// 吹き出し
+
+// index-css ------------------------------------------//
+// meal-new-css----------------------------------------
+
+.upper-content {
+  text-align: center;
+}
+
+.heading-name{
+  font-size: 100px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 200px;
+  margin: 40px auto 0px;
+}
+
+.meal-record{
+  font-size: 18px;
+}
+
+.count{
+  font-size: 130px;
+}
+
+.memo {
+  font-size: 20px;
+}
+
+.memo-input {
+  width: 400px;
+}
+
+.exit-sub {
+  margin-top: 20px;
+  width: 100px
+}
+
+.start {
+  font-size: 20px;
+  width: 150px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+// meal-new-css-----------------------------------//
