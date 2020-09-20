@@ -7,6 +7,7 @@ class RecordController < ApplicationController
   end
 
   def show
+    
   end
 
   def new
