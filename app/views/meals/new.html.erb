@@ -1,20 +1,40 @@
-<h2>---</h2>
-<p>---</p>
-
-<div class="upper-content">
-  <h1 class="heading-name">食事</h1>
-  <div class="meal-record">
-    <div id="timer" class="meal-time">00:00:000</div>
-    <%# <input type="submit" value="start" class="start"> %>
-    <button id="start" class="start">start</button>
-    <button id="stop" class="start">stop</button>
-    <button id="reset" class="start">reset</button>
+<div class="jumbotron jumbotron-newpage mt-4">
+  <div class="upper-content">
+    <h1 class="heading-name mt-5">食事</h1>
+    <div class="meal-record">
+      <div id="stopwatchWrapper">
+    <div id="stopwatch" class="watch">
+      <span id="stopwatchHour" class="count">00</span>
+        <span class="count">:</span>
+        <span id="stopwatchMinute" class="count">00</span>
+        <span class="count">:</span>
+        <span id="stopwatchSecond" class="count">00</span>
+        <span class="count">.</span>
+        <span id="stopwatchMillisecond" class="second">000</span>
+    </div>
+    <div id="stopwatchControl">
+      <button id="stopwatchStartAndStop">スタート</button>
+      <button id="stopwatchClear">クリア</button>
+      <button id="stopwatchRecord">記録する</button>
+    </div>
   </div>
-  <div class="memo">
-    <div>メモ</div>
-    <textarea class="memo-input"></textarea>
-  </div>
-  <div class="exit">
-    <input type="submit" value="終了" class="exit-sub">
+    </div>
+    <%= form_with(model: @meal, local: true) do |form| %>
+    <div class="memo">
+      <div>メモ</div>
+      <%= form.text_area :content, rows: "2", class: "memo-input" %>
+    </div>
+    <div class="mt-3">
+      <div>食事時間(時:分:秒)</div>
+      <textarea rows="1" class="time-input" id="hour" name="hour" >00</textarea>
+      <span class="colon">:</span>
+      <textarea rows="1" class="time-input" id="minute" name="minute" >00</textarea>
+      <span class="colon-2">:</span>
+      <textarea rows="1" class="time-input" id="second" >00</textarea>
+    </div>
+    <div class="exit">
+      <%= form.submit "終了", class: "exit-sub" %>
+    </div>
+    <% end %>
   </div>
 </div>

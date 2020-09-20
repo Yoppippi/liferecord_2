@@ -10,7 +10,7 @@ class RecordController < ApplicationController
   end
 
   def new
-    
+
   end
 
   def new_guest
@@ -19,6 +19,6 @@ class RecordController < ApplicationController
       user.nickname = "ゲストユーザー"
     end
     sign_in user
-    redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
+    redirect_to record_index_path, notice: 'ゲストユーザーとしてログインしました。'
   end
 end

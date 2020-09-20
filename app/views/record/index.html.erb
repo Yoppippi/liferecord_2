@@ -13,16 +13,16 @@
     <div class="chat-main">
       <div class="main-one">
         <%# <input type="submit"  value="食事開始" class="main-box btn-shadow"> %>
-        <%= link_to "食事開始", new_meal_path, class: "main-box btn btn-shadow mt-4"%>
+        <%= link_to "食事開始", new_meal_path, data: {"turbolinks" => false}, class: "main-box btn btn-shadow mt-4"%>
         <div class="balloon1-top">
           <p>ユーザー名を押すと記録の詳細が確認できます</p>
         </div>
       </div>
       <div class="main-two">
-        <%= link_to "運動開始", new_motion_path, class: "main-box btn btn-shadow"%>
+        <%= link_to "運動開始", new_motion_path, data: {"turbolinks" => false}, class: "main-box btn btn-shadow"%>
       </div>
       <div class="main-three">
-        <%= link_to "睡眠開始", new_sleep_path, class: "main-box btn btn-shadow mb-4"%>
+        <%= link_to "睡眠開始", new_sleep_path, data: {"turbolinks" => false}, class: "main-box btn btn-shadow mb-4"%>
       </div>
     </div>
   </div>

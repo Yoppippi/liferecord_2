@@ -323,10 +323,11 @@
 // 吹き出し
 
 // index-css ------------------------------------------//
-// meal-new-css----------------------------------------
+// meal_motion_sleep-new-css----------------------------------------
 
 .upper-content {
   text-align: center;
+  height: 100vh;
 }
 
 .heading-name{
@@ -334,7 +335,7 @@
   text-align: center;
   border-bottom: 1px solid black;
   width: 200px;
-  margin: 40px auto 0px;
+  margin: 0px auto;
 }
 
 .meal-record{
@@ -342,11 +343,12 @@
 }
 
 .count{
-  font-size: 130px;
+  font-size: 100px;
 }
 
 .memo {
   font-size: 20px;
+  margin-top: 30px;
 }
 
 .memo-input {
@@ -358,10 +360,42 @@
   width: 100px
 }
 
-.start {
-  font-size: 20px;
-  width: 150px;
-  margin-bottom: 30px;
-  border-radius: 10px;
+.second {
+  position: absolute;
+  top: 276.5px;
+  left: 935px;
+  font-size: 60px;
 }
-// meal-new-css-----------------------------------//
+
+.watch {
+  margin-right: 40px;
+}
+
+.jumbotron-newpage {
+  position: relative;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.time-input {
+  width: 65px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.colon {
+  position: absolute;
+  top: 583px;
+  left: 750px;
+  font-size: 35px;
+}
+
+.colon-2 {
+  position: absolute;
+  top: 583px;
+  left: 671px;
+  font-size: 35px;
+}
+
+// meal_motion_sleep-new-css-----------------------------//
