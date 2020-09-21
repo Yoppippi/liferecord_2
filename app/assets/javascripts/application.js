@@ -70,12 +70,12 @@ function stopwatchClear() {
 // timer2------------------------------
 window.addEventListener('load', function(){
 
-  const pullDownButton = document.getElementById("stopwatchRecord")
+  const stopwatchRecord = document.getElementById("stopwatchRecord")
   const hour = document.getElementById("hour")
   const minute = document.getElementById("minute")
   const second = document.getElementById("second")
 
-  pullDownButton.addEventListener('click', function() {
+  stopwatchRecord.addEventListener('click', function() {
     hour.innerHTML = $stopwatchHour;
     minute.innerHTML = $stopwatchMinute;
     second.innerHTML = $stopwatchSecond;

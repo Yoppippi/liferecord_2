@@ -1,9 +1,6 @@
 class MealsController < ApplicationController
 
   def index
-    @meals = Meal.all 
-    @motions = Motion.all
-    @sleeps = Sleep.all
   end
 
   def new
