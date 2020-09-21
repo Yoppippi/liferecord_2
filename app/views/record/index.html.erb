@@ -1,5 +1,4 @@
 <h2>---</h2>
-<p>---</p>
 
 <body>
   <div class="wrapper">
@@ -10,7 +9,9 @@
         <%= form_with url: record_index_path, local: true do |form| %>
           <%= form.text_field :amount, class: "side-box", placeholder:" 単位:ml      (例)550" %>
           <%= form.submit "チャージ", class: "side-btn ml-1", id: "charge-btn" %>
-          <input  class="side-btn mt-3" type="submit" value="リセット">
+        <% end %>
+        <%= form_with url: destroy_all_record_index_path, method: :delete, local: true do |form| %>
+          <%= form.submit  "リセット", class: "side-btn mt-3" %>
         <% end %>
       </div>
     </div>

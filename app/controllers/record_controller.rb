@@ -20,6 +20,14 @@ class RecordController < ApplicationController
     redirect_to record_index_path
   end
 
+  def destroy
+  end
+
+  def destroy_all
+    Drink.destroy_all
+    redirect_to record_index_path
+  end
+
   def new_guest
     user = User.find_or_create_by(email: 'guest@example.com') do |user|
       user.password = SecureRandom.urlsafe_base64

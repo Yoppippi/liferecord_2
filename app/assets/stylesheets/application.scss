@@ -83,7 +83,7 @@
 }
 
 .fa-google {
-  color : blue;
+  color : black;
 }
 // top-css ------------------------------------------//
 // user-css -----------------------------------------
@@ -334,6 +334,10 @@
 }
 // 吹き出し
 
+.date {
+  margin: 0 5px 0 10px;
+  font-size: 16px;
+}
 // index-css ------------------------------------------//
 // meal_motion_sleep-new-css----------------------------------------
 
@@ -374,7 +378,7 @@
 
 .second {
   position: absolute;
-  top: 276.5px;
+  top: 233.5px;
   left: 935px;
   font-size: 60px;
 }
@@ -398,14 +402,14 @@
 
 .colon {
   position: absolute;
-  top: 583px;
+  top: 540px;
   left: 750px;
   font-size: 35px;
 }
 
 .colon-2 {
   position: absolute;
-  top: 583px;
+  top: 540px;
   left: 671px;
   font-size: 35px;
 }
