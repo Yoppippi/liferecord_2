@@ -1,0 +1,41 @@
+<div class="jumbotron jumbotron-newpage mt-4">
+  <div class="upper-content">
+    <h1 class="heading-name mt-5">食事</h1>
+    <div class="meal-record">
+      <div id="stopwatchWrapper">
+    <div id="stopwatch" class="watch">
+      <span id="stopwatchHour" class="count">00</span>
+        <span class="count">:</span>
+        <span id="stopwatchMinute" class="count">00</span>
+        <span class="count">:</span>
+        <span id="stopwatchSecond" class="count">00</span>
+        <span class="count">.</span>
+        <span id="stopwatchMillisecond" class="second">000</span>
+    </div>
+    <div id="stopwatchControl">
+      <button id="stopwatchStartAndStop">スタート</button>
+      <button id="stopwatchClear">クリア</button>
+      <button id="stopwatchRecord">記録する</button>
+    </div>
+  </div>
+    </div>
+    <%= form_with(model: @meal, local: true) do |form| %>
+    <div class="memo">
+      <div>メモ</div>
+      <%= form.text_area :content, rows: "2", class: "memo-input" %>
+    </div>
+    <div class="mt-3">
+      <div>食事時間(時:分:秒)</div>
+      <%= form.text_area :hour, rows: "1", id: "hour", class: "time-input", value: '00' %>
+      <span class="colon">:</span>
+      <span class="colon-2">:</span>
+      <%= form.text_area :minute, rows: "1", id: "minute", class: "time-input", value: '00' %>
+      <%= form.text_area :second, rows: "1", id: "second", class: "time-input", value: '00' %>
+      
+    </div>
+    <div class="exit">
+      <%= form.submit "終了", class: "exit-sub" %>
+    </div>
+    <% end %>
+  </div>
+</div>
