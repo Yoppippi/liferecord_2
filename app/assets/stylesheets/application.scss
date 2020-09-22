@@ -270,10 +270,10 @@
 }
 
 .rate {
-  font-size: 80px;
+  font-size: 75px;
   padding-top: 400px;
   position: absolute;
-  top: -185px;
+  top: -180px;
   left: 125px;
 }
 
@@ -369,6 +369,7 @@
 
 .memo-input {
   width: 400px;
+  resize: none;
 }
 
 .exit-sub {
@@ -398,6 +399,7 @@
   font-size: 25px;
   text-align: center;
   margin-right: 10px;
+  resize: none;
 }
 
 .colon {

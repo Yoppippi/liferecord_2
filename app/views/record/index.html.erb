@@ -3,8 +3,25 @@
 <body>
   <div class="wrapper">
     <div class="chat-side">
-      <div class="mizu" id="waterman" style="background: url('/images/one.png');">
+      <% if @drink < 400 %>
+        <div class="mizu" id="waterman" style="background: url('/images/one.png');">
         <span class="rate ml-3" id="waterpercent">0%</span>
+      <% elsif @drink < 800 %>
+        <div class="mizu" id="waterman" style="background: url('/images/two.png');">
+        <span class="rate ml-3" id="waterpercent">20%</span>
+      <% elsif @drink < 1200 %>
+        <div class="mizu" id="waterman" style="background: url('/images/three.png');">
+        <span class="rate ml-3" id="waterpercent">40%</span>
+      <% elsif @drink < 1600 %>
+        <div class="mizu" id="waterman" style="background: url('/images/four.png');">
+        <span class="rate ml-3" id="waterpercent">60%</span>
+      <% elsif @drink < 2000  %>
+        <div class="mizu" id="waterman" style="background: url('/images/five.png');">
+        <span class="rate ml-3" id="waterpercent">80%</span>
+      <% else %>
+        <div class="mizu" id="waterman" style="background: url('/images/six.png');">
+        <span class="rate ml-3" id="waterpercent">100%</span>
+      <% end %>
         <span class="parcent" id="waterpercent"><%= @drink %>ml</span>
         <%= form_with url: record_index_path, local: true do |form| %>
           <%= form.text_field :amount, class: "side-box", placeholder:" 単位:ml      (例)550" %>
