@@ -1,20 +1,17 @@
-<h6>----</h6>
-<p>-----</p>
+<%= stylesheet_link_tag "users/show", :media => "all" %>
 
-<% @meals.each do |meal| %>
-  <div>
-    <%= meal.content %>
-  </div>
-<% end %>
+<div class=calendar>
+  <% @week_days.each do |day| %>
+    <div class='item'>
+      <div class='date'>
+        <%= day[:month] %>/<%= day[:date] %><%= day[:wday] %>
+      </div>
+      <ul class='content'>
+        <% 25.times do |int| %>
+          <span class="vertical"><%= int %></span>
 
-<% @motions.each do |motion| %>
-  <div>
-    <%= motion.content %>
-  </div>
-<% end %>
-
-<% @sleeps.each do |sleep| %>
-  <div>
-    <%= sleep.content %>
-  </div>
-<% end %>  
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
