@@ -1,0 +1,133 @@
+.mizu {
+  margin-left: 70px;
+  width: 250px;
+  height:750px;
+  // display: flex;
+  // align-items: center;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  zoom: 90%;
+  background-color: whitesmoke;
+  // margin-left: 100px;
+}
+
+.chat-side {
+  width: 400px;
+  background-color: whitesmoke;
+  position:relative;
+  margin-left: 170px;
+}
+
+.chat-main {
+  width: calc(100% - 400px);
+  background-color: whitesmoke;
+}
+
+.main-one {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-two {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-three {
+  height: 33%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.main-box {
+  width: 340px;
+  background-color: #ffffff;
+  margin-left: 280px;
+  font-size: 40px;
+  padding: 13px 0px;
+}
+
+.side-box {
+  height: 40px;
+  width: 150px;
+  background-color: whitesmoke;
+  margin-top: 370px;
+  margin-left: 10px;
+}
+
+.rate {
+  font-size: 75px;
+  padding-top: 400px;
+  position: absolute;
+  top: -180px;
+  left: 125px;
+}
+
+.parcent {
+  font-size: 35px;
+  padding-top: 400px;
+  position: absolute;
+  top: -85px;
+  left: 155px;
+}
+
+.side-btn {
+  padding: 5px 6px;
+  
+}
+
+.btn-shadow {
+  border: black 1px solid;
+  border-bottom: solid 4px #627295;
+  border-radius: 5px;
+}
+
+.btn-shadow:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+// 吹き出し
+.balloon1-top {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 15px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #cef5f5;
+  margin-left: 80px;
+  margin-bottom: 160px;
+}
+
+.balloon1-top:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #cef5f5;
+}
+
+.balloon1-top p {
+  margin: 0;
+  padding: 0;
+}
+// 吹き出し
+
+.date {
+  margin: 0 5px 0 10px;
+}

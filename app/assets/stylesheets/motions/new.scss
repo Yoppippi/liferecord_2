@@ -1,0 +1,74 @@
+.upper-content {
+  text-align: center;
+  height: 100vh;
+}
+
+.heading-name{
+  font-size: 100px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 200px;
+  margin: 0px auto;
+}
+
+.meal-record{
+  font-size: 18px;
+}
+
+.count{
+  font-size: 100px;
+}
+
+.memo {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.memo-input {
+  width: 400px;
+  resize: none;
+}
+
+.exit-sub {
+  margin-top: 20px;
+  width: 100px
+}
+
+.second {
+  position: absolute;
+  top: 233.5px;
+  left: 935px;
+  font-size: 60px;
+}
+
+.watch {
+  margin-right: 40px;
+}
+
+.jumbotron-newpage {
+  position: relative;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.time-input {
+  width: 65px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+  resize: none;
+}
+
+.colon {
+  position: absolute;
+  top: 540px;
+  left: 750px;
+  font-size: 35px;
+}
+
+.colon-2 {
+  position: absolute;
+  top: 540px;
+  left: 671px;
+  font-size: 35px;
+}

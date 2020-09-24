@@ -1,24 +1,63 @@
-# README
+# アプリケーション名
+ 
+Life Record
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+ 
+日々の生活習慣を記録して、それらを分かりやすく比較できます。
+ 
+# URL
+ 
+まだデプロイしてません。
+ 
+# テスト用アカウント
+ 
+ワンクリックでゲストログインできます。
+ 
+# 利用方法
+ 
+食事 運動 睡眠 水分 の4種類の記録画面があります。
+食事 運動 睡眠 は開始時にアプリ上のストップウォッチで時間を測り、終了時に記録するボタンを押して時間を記録します。
+最後にメモを記入して終了ボタンを押すと記録完了です。
+水分はフォームに飲んだ水をml単位で入力しボタンを押すと記録完了です。
+ 
+# 目指した課題解決
+ 
+ 生活習慣を可視化して、規則正しい生活を送られるようにする
 
-Things you may want to cover:
+# 洗い出した要件
+ 
+* 日々の生活習慣を分かりやすく可視化する
+* 生活習慣を見直すために、生活を記録する
+* 飲んだ量を可視化して、あとどれぐらい飲んだらいいかを簡単な図で表す
+ 
+# 実装した機能についてのGIFと説明
 
-* Ruby version
+* 食事( 運動 睡眠 )の記録機能
+  https://gyazo.com/51c05cd08fa7be254add66ae8319440e
 
-* System dependencies
+* 水分の記録機能
+  https://gyazo.com/ef0434457300726e2215df1f49ccc430
+ 
+# 実装予定の機能
 
-* Configuration
+* 簡単なカロリー計算
 
-* Database creation
+# データベース設計
 
-* Database initialization
+https://gyazo.com/8d9d0f849450ef2c675aa27361e825d1
 
-* How to run the test suite
+# ローカルでの動作方法
 
-* Services (job queues, cache servers, search engines, etc.)
+% git clone https://github.com/Yoppippi/liferecord_2.git
+% cd liferecord_2.git
+% bundle install
+% yarn install
+% rails db:create
+% rails db:migrate
 
-* Deployment instructions
-
-* ...
+ruby '2.6.5'
+rails '6.0.0'
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+gem 'devise'

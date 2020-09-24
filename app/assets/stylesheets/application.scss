@@ -13,80 +13,7 @@
  */
  @import "bootstrap";
 
-//  top-css ------------------------------------------
- .jumbotron-extend {
-  position: relative;
-  height: 100vh;
-  // min-height: 300px;
-  background: url("/images/cafe.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.jumbotron-container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.site-name {
-  margin-bottom: 40px;
-  font-family: 'Playfair Display', serif;
-  font-size: 70px;
-  color: white;
-  text-shadow: 3px 6px 3px #808080; 
-  background-color: rgba(225, 225, 225, 0.55);
-  width: 770px;
-}
-.btn-black {
-  border-radius: 0;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Avenir', serif;
-  padding: 5px 40px;
-  font-size:20px;
-  display: inline-block
-}
-.btn-black:hover {
-   background-color: #fff;
-   color: #000;
-}
-
-.btn-white {
-  border-radius: 0;
-  background-color: #f8f9fa;
-  color: black;
-  font-family: 'Avenir', serif;
-  padding: 5px 40px;
-  font-size:25px
-}
-
-.btn-white:hover {
-  background-color: black;
-  color: #f8f9fa;
-}
-
-.top-html {
-  color: #892f1b ;
-  font-size: 80px;
-}
-
-.block {
-  display: block;
-}
-
-.guest-btn {
-  margin-left: 25px;
-}
-
-.btn-top {
-  padding: 10px 20px;
-}
-
-.fa-google {
-  color : blue;
-}
-// top-css ------------------------------------------//
-// user-css -----------------------------------------
+// user-css -------
 .account-page .account-page__inner {
   width: 980px;
   margin: 60px auto;
@@ -201,213 +128,87 @@
   padding: 0;
   font-size: 13px;
 }
-// user-css  ------------------------------------------//
-// index-css ------------------------------------------
-
-.mizu {
-  margin-left: 70px;
-  width: 250px;
-  height:750px;
-  // display: flex;
-  // align-items: center;
-  text-align: center;
-}
-.wrapper {
-  display: flex;
+// user-css ------/
+// top-css -------
+.jumbotron-extend {
+  position: relative;
   height: 100vh;
-  zoom: 90%;
-  background-color: whitesmoke;
-  // margin-left: 100px;
+  // min-height: 300px;
+  background: url("/images/cafe.jpg") no-repeat center center;
+  background-size: cover;
 }
 
-.chat-side {
-  width: 400px;
-  background-color: whitesmoke;
-  position:relative;
-  margin-left: 170px;
+.jumbotron-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.chat-main {
-  width: calc(100% - 400px);
-  background-color: whitesmoke;
+.site-name {
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  color: white;
+  text-shadow: 3px 6px 3px #808080; 
+  background-color: rgba(225, 225, 225, 0.55);
+  width: 770px;
+}
+.btn-black {
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Avenir', serif;
+  padding: 5px 40px;
+  font-size:20px;
+  display: inline-block
+}
+.btn-black:hover {
+   background-color: #fff;
+   color: #000;
 }
 
-.main-one {
-  height: 33%;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
+.btn-white {
+  border-radius: 0;
+  background-color: #f8f9fa;
+  color: black;
+  font-family: 'Avenir', serif;
+  padding: 5px 40px;
+  font-size:25px
 }
 
-.main-two {
-  height: 33%;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
+.btn-white:hover {
+  background-color: black;
+  color: #f8f9fa;
 }
 
-.main-three {
-  height: 33%;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-}
-
-.main-box {
-  width: 340px;
-  background-color: #ffffff;
-  margin-left: 280px;
-  font-size: 40px;
-  padding: 13px 0px;
-}
-
-.side-box {
-  height: 40px;
-  width: 150px;
-  background-color: whitesmoke;
-  margin-top: 370px;
-  margin-left: 10px;
-}
-
-.rate {
+.top-html {
+  color: #892f1b ;
   font-size: 80px;
-  padding-top: 400px;
-  position: absolute;
-  top: -185px;
-  left: 125px;
 }
 
-.parcent {
-  font-size: 35px;
-  padding-top: 400px;
-  position: absolute;
-  top: -85px;
-  left: 155px;
+.block {
+  display: block;
 }
 
-.side-btn {
-  padding: 5px 6px;
-  
+.guest-btn {
+  margin-left: 25px;
 }
 
-.btn-shadow {
-  border: black 1px solid;
-  border-bottom: solid 4px #627295;
-  border-radius: 5px;
+.btn-top {
+  padding: 10px 20px;
 }
 
-.btn-shadow:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  border-bottom: none;
+.fa-google {
+  color : black;
 }
 
-// 吹き出し
-.balloon1-top {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 15px 10px;
-  min-width: 120px;
-  max-width: 100%;
-  color: #555;
-  font-size: 16px;
-  background: #cef5f5;
-  margin-left: 80px;
-  margin-bottom: 160px;
+.date {
+  height: 5vh;
+  display: flex;
+  font-size: 3vh;
+  align-items: center;
+  justify-content: center;
+  border-bottom: medium solid rgb(0, 0, 0);
+  margin: 0 5px 0 10px;
 }
-
-.balloon1-top:before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #cef5f5;
-}
-
-.balloon1-top p {
-  margin: 0;
-  padding: 0;
-}
-// 吹き出し
-
-// index-css ------------------------------------------//
-// meal_motion_sleep-new-css----------------------------------------
-
-.upper-content {
-  text-align: center;
-  height: 100vh;
-}
-
-.heading-name{
-  font-size: 100px;
-  text-align: center;
-  border-bottom: 1px solid black;
-  width: 200px;
-  margin: 0px auto;
-}
-
-.meal-record{
-  font-size: 18px;
-}
-
-.count{
-  font-size: 100px;
-}
-
-.memo {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.memo-input {
-  width: 400px;
-}
-
-.exit-sub {
-  margin-top: 20px;
-  width: 100px
-}
-
-.second {
-  position: absolute;
-  top: 276.5px;
-  left: 935px;
-  font-size: 60px;
-}
-
-.watch {
-  margin-right: 40px;
-}
-
-.jumbotron-newpage {
-  position: relative;
-  height: 100vh;
-  background-color: whitesmoke;
-}
-
-.time-input {
-  width: 65px;
-  font-size: 25px;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.colon {
-  position: absolute;
-  top: 583px;
-  left: 750px;
-  font-size: 35px;
-}
-
-.colon-2 {
-  position: absolute;
-  top: 583px;
-  left: 671px;
-  font-size: 35px;
-}
-
-// meal_motion_sleep-new-css-----------------------------//
+// top-css ------

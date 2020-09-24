@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "record#top"
   resources :users
-  resources :record
+  
+  resources :record do
+    collection do
+      delete 'destroy_all'
+    end
+  end
+
   resources :meals
   resources :sleeps
   resources :motions
