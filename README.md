@@ -16,10 +16,10 @@ Life Record
  
 # 利用方法
  
-食事 運動 睡眠 水分 の4種類の記録画面があります。
-食事 運動 睡眠 は開始時にアプリ上のストップウォッチで時間を測り、終了時に記録するボタンを押して時間を記録します。
-最後にメモを記入して終了ボタンを押すと記録完了です。
-水分はフォームに飲んだ水をml単位で入力しボタンを押すと記録完了です。
+* 食事 運動 睡眠 水分 の4種類の記録画面があります。
+* 食事 運動 睡眠 は開始時にアプリ上のストップウォッチで時間を測り、終了時に記録するボタンを押して時を記録します。
+* 最後にメモを記入して終了ボタンを押すと記録完了です。
+* 水分はフォームに飲んだ水をml単位で入力しボタンを押すと記録完了です。
  
 # 目指した課題解決
  
@@ -49,15 +49,15 @@ https://gyazo.com/8d9d0f849450ef2c675aa27361e825d1
 
 # ローカルでの動作方法
 
-% git clone https://github.com/Yoppippi/liferecord_2.git
-% cd liferecord_2.git
-% bundle install
-% yarn install
-% rails db:create
-% rails db:migrate
+* % git clone https://github.com/Yoppippi/liferecord_2.git
+* % cd liferecord_2.git
+* % bundle install
+* % yarn install
+* % rails db:create
+* % rails db:migrate
 
-ruby '2.6.5'
-rails '6.0.0'
-gem 'bootstrap', '~> 4.3.1'
-gem 'jquery-rails'
-gem 'devise'
+* ruby '2.6.5'
+* rails '6.0.0'
+* gem 'bootstrap', '4.3.1'
+* gem 'jquery-rails'
+* gem 'devise'
