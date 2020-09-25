@@ -57,3 +57,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 gem 'devise'
+
+group :production do
+  gem 'rails_12factor'
+end
