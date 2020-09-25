@@ -8,7 +8,7 @@ Life Record
  
 # URL
  
-まだデプロイしてません。
+https://liferecord-app.herokuapp.com/
  
 # テスト用アカウント
  
