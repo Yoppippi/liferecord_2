@@ -37,7 +37,7 @@ https://liferecord-app.herokuapp.com/
   [![Image from Gyazo](https://i.gyazo.com/51c05cd08fa7be254add66ae8319440e.gif)](https://gyazo.com/51c05cd08fa7be254add66ae8319440e)
 
 * 水分の記録機能
-  https://gyazo.com/ef0434457300726e2215df1f49ccc430
+  [![Image from Gyazo](https://i.gyazo.com/ef0434457300726e2215df1f49ccc430.gif)](https://gyazo.com/ef0434457300726e2215df1f49ccc430)
  
 # 実装予定の機能
 
