@@ -8,7 +8,7 @@ Life Record
  
 # URL
  
-まだデプロイしてません。
+https://liferecord-app.herokuapp.com/
  
 # テスト用アカウント
  
@@ -20,6 +20,7 @@ Life Record
 * 食事 運動 睡眠 は開始時にアプリ上のストップウォッチで時間を測り、終了時に記録するボタンを押して時を記録します。
 * 最後にメモを記入して終了ボタンを押すと記録完了です。
 * 水分はフォームに飲んだ水をml単位で入力しボタンを押すと記録完了です。
+* 画面右上のユーザー名を押すと一週間分の詳細画面が見れます
  
 # 目指した課題解決
  
@@ -34,10 +35,10 @@ Life Record
 # 実装した機能についてのGIFと説明
 
 * 食事( 運動 睡眠 )の記録機能
-  https://gyazo.com/51c05cd08fa7be254add66ae8319440e
+  [![Image from Gyazo](https://i.gyazo.com/51c05cd08fa7be254add66ae8319440e.gif)](https://gyazo.com/51c05cd08fa7be254add66ae8319440e)
 
 * 水分の記録機能
-  https://gyazo.com/ef0434457300726e2215df1f49ccc430
+  [![Image from Gyazo](https://i.gyazo.com/ef0434457300726e2215df1f49ccc430.gif)](https://gyazo.com/ef0434457300726e2215df1f49ccc430)
  
 # 実装予定の機能
 
@@ -45,7 +46,7 @@ Life Record
 
 # データベース設計
 
-https://gyazo.com/8d9d0f849450ef2c675aa27361e825d1
+<img width="829" alt="life-record-er" src="https://user-images.githubusercontent.com/69132252/94428036-05aaca80-01cb-11eb-8bff-2feb24eb3b96.png">
 
 # ローカルでの動作方法
 
