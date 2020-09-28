@@ -45,7 +45,7 @@ https://liferecord-app.herokuapp.com/
 
 # データベース設計
 
-https://user-images.githubusercontent.com/69132252/94427809-a1880680-01ca-11eb-8393-843c9c3231b2.png
+<img width="829" alt="life-record-er" src="https://user-images.githubusercontent.com/69132252/94428036-05aaca80-01cb-11eb-8bff-2feb24eb3b96.png">
 
 # ローカルでの動作方法
 
