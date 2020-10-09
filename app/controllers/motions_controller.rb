@@ -2,6 +2,7 @@ class MotionsController < ApplicationController
 
   def new
     @motion = Motion.new
+    @event = Event.new
   end
 
   def create

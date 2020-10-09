@@ -5,6 +5,7 @@ class MealsController < ApplicationController
 
   def new
     @meal = Meal.new
+    @event = Event.new
   end
 
   def create

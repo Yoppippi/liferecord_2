@@ -1,17 +1,4 @@
 <%= stylesheet_link_tag "users/show", :media => "all" %>
-
-<div class=calendar>
-  <% @week_days.each do |day| %>
-    <div class='item'>
-      <div class='date'>
-        <%= day[:month] %>/<%= day[:date] %><%= day[:wday] %>
-      </div>
-      <ul class='content'>
-        <% 25.times do |int| %>
-          <span class="vertical"><%= int %></span>
-
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-</div>
+<h3>---</h3>
+<h6>'</h6>
+<div id="calendar"></div>

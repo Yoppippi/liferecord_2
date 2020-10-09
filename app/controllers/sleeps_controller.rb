@@ -2,6 +2,7 @@ class SleepsController < ApplicationController
 
   def new
     @sleep = Sleep.new
+    @event = Event.new
   end
 
   def create

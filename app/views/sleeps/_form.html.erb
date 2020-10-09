@@ -1,0 +1,39 @@
+<%= form_with(model: event, local: true) do |form| %>
+  <% if event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+        <% event.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h3>メモ</h3>
+  
+  <div class="field">
+    <%# <%= form.label :title %> 
+    <%= form.hidden_field :title, value: "睡眠" %>
+  </div>
+
+  <div class="field">
+    <%# <%= form.label :body %> 
+    <%= form.text_field :body, id: "record-text" %>
+  </div>
+
+  <div class="field">
+    <%# <%= form.label :start_date %> 
+    開始時間<%= form.datetime_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%# <%= form.label :end_date %> 
+    終了時間<%= form.datetime_select :end_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "記録する", id: "record-btn"%>
+  </div>
+<% end %>
