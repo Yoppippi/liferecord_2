@@ -215,9 +215,13 @@
 // top-css ------
 
 #calendar {
-  max-width: 1300px;
+  max-width: 1100px;
   // height: 100px;
 	margin: 0 auto;
+}
+tr, td {
+  font-size: 10px;
+  height: 10px;
 }
 
 #stopwatchControl {
